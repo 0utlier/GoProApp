@@ -12,6 +12,7 @@
 		31C1E88F1F47ACDA0082562A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31C1E88D1F47ACDA0082562A /* Main.storyboard */; };
 		31C1E8911F47ACDA0082562A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31C1E8901F47ACDA0082562A /* Assets.xcassets */; };
 		31C1E8941F47ACDA0082562A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31C1E8921F47ACDA0082562A /* LaunchScreen.storyboard */; };
+		31F032501F51D1750056410C /* DAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31F0324F1F51D1750056410C /* DAO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		31C1E8901F47ACDA0082562A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		31C1E8931F47ACDA0082562A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		31C1E8951F47ACDA0082562A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31F0324F1F51D1750056410C /* DAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DAO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 			children = (
 				31C1E8891F47ACDA0082562A /* AppDelegate.swift */,
 				31C1E88B1F47ACDA0082562A /* ViewController.swift */,
+				31F0324F1F51D1750056410C /* DAO.swift */,
 				31C1E88D1F47ACDA0082562A /* Main.storyboard */,
 				31C1E8901F47ACDA0082562A /* Assets.xcassets */,
 				31C1E8921F47ACDA0082562A /* LaunchScreen.storyboard */,
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31F032501F51D1750056410C /* DAO.swift in Sources */,
 				31C1E88C1F47ACDA0082562A /* ViewController.swift in Sources */,
 				31C1E88A1F47ACDA0082562A /* AppDelegate.swift in Sources */,
 			);
@@ -265,6 +269,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = J8S4TEK739;
 				INFOPLIST_FILE = GoPro/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Outlier.GoPro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -278,6 +283,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = J8S4TEK739;
 				INFOPLIST_FILE = GoPro/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Outlier.GoPro;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -304,6 +310,7 @@
 				31C1E89A1F47ACDA0082562A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
