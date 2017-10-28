@@ -10,12 +10,42 @@ import UIKit
 
 class DAO: NSObject {
     
+    let hFour = GoProH4()
+//    let hThree = GoProH3()
+//    let hThreePlus = GoProH3P()
+    //    let hFive = GoProH5()
+    //    let hSix = GoProH6()
+
+    // MARK: - Singleton
+    
+    final class gopro {
+        
+        // Can't init is singleton
+        private init() { }
+        
+        // MARK: Shared Instance
+        
+        static let shared = GoProH4()
+        
+        // MARK: Local Variable
+        
+        var emptyStringArray : [String] = []
+        
+    }
+    
+    // MARK: - EXAMPLE
+    
+    func examplePress(device:Int) {
+        //        hFour.power
+        
+    }
+    
     // MARK: - URL SESSION
     func makeURLSession() {
         let url = URL(string: "")
         
         let task = URLSession.shared.dataTask(with: url!) {(data, response, error) in
-            print(String(data: data!, encoding: String.Encoding.utf8))
+            print(String(data: data!, encoding: String.Encoding.utf8)!)
         }
         
         task.resume()
@@ -25,7 +55,7 @@ class DAO: NSObject {
         let url = URL(string: "http://10.5.5.9/bacpac/SH?t=inbinary&p=%01")
         
         let task = URLSession.shared.dataTask(with: url!) {(data, response, error) in
-            print(String(data: data!, encoding: String.Encoding.utf8))
+            print(String(data: data!, encoding: String.Encoding.utf8)!)
         }
         
         task.resume()
@@ -36,7 +66,7 @@ class DAO: NSObject {
         let url = URL(string: "http://10.5.5.9/bacpac/PW?t=inbinary&p=%00")
         
         let task = URLSession.shared.dataTask(with: url!) {(data, response, error) in
-            print(String(data: data!, encoding: String.Encoding.utf8))
+            print(String(data: data!, encoding: String.Encoding.utf8) as Any)
         }
         
         task.resume()
@@ -52,7 +82,7 @@ class DAO: NSObject {
         case 0:
             //this is the call for GoPro ???
             print("device 0 is turned on")
-            let url = URL(string: "http://10.5.5.9/bacpac/PW?t=inbinary&p=%01")
+//            let url = URL(string: "http://10.5.5.9/bacpac/PW?t=inbinary&p=%01")
         case 1:
             //this is the call for GoPro ???
             print("device 1 is turned on")
@@ -62,13 +92,13 @@ class DAO: NSObject {
         default:
             print("not sure which device is turned on")
         }
-        let task = URLSession.shared.dataTask(with: url!) {(data, response, error) in
-            print(String(data: data!, encoding: String.Encoding.utf8))
+//        let task = URLSession.shared.dataTask(with: url!) {(data, response, error) in
+//            print(String(data: data!, encoding: String.Encoding.utf8))
         
         
-        task.resume()
+//        task.resume()
         
-        }
+//        }
     }
     
     
@@ -88,6 +118,7 @@ class DAO: NSObject {
             print("not sure which device is turned off")
         }
     }
+    
     
     
     // MARK: - SHUTTER

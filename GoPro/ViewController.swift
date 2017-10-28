@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     
     let dao = DAO()
     
+    // create array for CURRENT SETTINGS [Mode, SubMode, quality, FPS,]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,18 +54,33 @@ class ViewController: UIViewController {
     
     
     func addButtonForShutter() {
-    let button = UIButton(frame: CGRect(x: 200, y: 200, width: 100, height: 50))
-    button.backgroundColor = .red
-    button.setTitle("Shutter Button", for: .normal)
-    button.addTarget(self, action: #selector(buttonActionS), for: .touchUpInside)
-    
-    self.view.addSubview(button)
+        let button = UIButton(frame: CGRect(x: 200, y: 200, width: 100, height: 50))
+        button.backgroundColor = .red
+        button.setTitle("Shutter Button", for: .normal)
+        button.addTarget(self, action: #selector(buttonActionS), for: .touchUpInside)
+        
+        self.view.addSubview(button)
     }
-
+    
     func buttonActionS(sender: UIButton!) {
         print("Button tapped")
         dao.shutterPress(device: 2)
+        
+    }
     
+    func addButtonForExample() {
+        let button = UIButton(frame: CGRect(x: 200, y: 300, width: 100, height: 50))
+        button.backgroundColor = .red
+        button.setTitle("Example", for: .normal)
+        button.addTarget(self, action: #selector(exampleAction), for: .touchUpInside)
+        
+        self.view.addSubview(button)
+    }
+    
+    func exampleAction(sender: UIButton!) {
+        print("Button tapped")
+        dao.examplePress(device: 2)
+        
     }
     
 }

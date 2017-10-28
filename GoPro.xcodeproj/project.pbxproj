@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		310EE7931F5E49D7000F258A /* GoProH4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310EE7921F5E49D7000F258A /* GoProH4.swift */; };
 		31C1E88A1F47ACDA0082562A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C1E8891F47ACDA0082562A /* AppDelegate.swift */; };
 		31C1E88C1F47ACDA0082562A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C1E88B1F47ACDA0082562A /* ViewController.swift */; };
 		31C1E88F1F47ACDA0082562A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31C1E88D1F47ACDA0082562A /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		310EE7921F5E49D7000F258A /* GoProH4.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoProH4.swift; sourceTree = "<group>"; };
 		31C1E8861F47ACDA0082562A /* GoPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31C1E8891F47ACDA0082562A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		31C1E88B1F47ACDA0082562A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				31C1E8891F47ACDA0082562A /* AppDelegate.swift */,
 				31C1E88B1F47ACDA0082562A /* ViewController.swift */,
 				31F0324F1F51D1750056410C /* DAO.swift */,
+				310EE7921F5E49D7000F258A /* GoProH4.swift */,
 				31C1E88D1F47ACDA0082562A /* Main.storyboard */,
 				31C1E8901F47ACDA0082562A /* Assets.xcassets */,
 				31C1E8921F47ACDA0082562A /* LaunchScreen.storyboard */,
@@ -143,6 +146,7 @@
 				31F032501F51D1750056410C /* DAO.swift in Sources */,
 				31C1E88C1F47ACDA0082562A /* ViewController.swift in Sources */,
 				31C1E88A1F47ACDA0082562A /* AppDelegate.swift in Sources */,
+				310EE7931F5E49D7000F258A /* GoProH4.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
